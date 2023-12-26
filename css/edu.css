@@ -1,0 +1,136 @@
+body {
+    width: 100%;
+    height: auto;
+    min-height: 60.5em;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'edu nav'
+    'footer footer';
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10% auto 5%;
+    background-color: papayawhip;
+}
+
+/* Education */
+#edu {
+    display: flex;
+    grid-area: edu;
+}
+
+#edu h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+}
+
+#edu th {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+}
+
+#edu td {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    padding: 2px;
+}
+
+div#edu {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: 
+    'education'
+    'exp';
+    grid-template-columns: auto;
+    grid-template-rows: 40% 60%;
+}
+
+#education {
+    display: block;
+    grid-area: education;
+    margin: auto;
+}
+
+#exp {
+    display: block;
+    grid-area: exp;
+    margin: auto;
+}
+
+/* Table */
+table {
+    width: 60em;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 100%;
+        height: auto;
+        min-height: 60.5em;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'edu'
+        'footer';
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        background-color: papayawhip;
+    }
+    
+    /* Education */
+    #edu {
+        display: flex;
+        grid-area: edu;
+    }
+
+    #edu h1 {
+        font-family: 'Syne', sans-serif;
+        font-size: 24px;
+    }
+
+    #edu th {
+        font-family: 'Outfit', sans-serif;
+        font-size: 16px;
+    }
+
+    #edu td {
+        font-family: 'Outfit', sans-serif;
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    div#edu {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-areas: 
+        'education'
+        'exp';
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #education {
+        display: block;
+        grid-area: education;
+        margin: auto;
+    }
+
+    #exp {
+        display: block;
+        grid-area: exp;
+        margin: auto;
+    }
+
+    /* Table */
+    table {
+        width: auto;
+        height: auto;
+    }
+}

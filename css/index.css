@@ -1,0 +1,220 @@
+body {
+    width: 100%;
+    height: auto;
+    min-height: 60.1em;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'me nav'
+    'footer footer';
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10% auto 5%;
+    background-color: papayawhip;
+}
+
+/* Main Content */
+#me {
+    display: flex;
+    grid-area: me;
+    border: 1px solid black;
+}
+
+#me img {
+    width: auto;
+    height: 450px;
+    background-color: peachpuff;
+    border: 1px solid black;
+}
+
+/* Main Content Data */
+div.container {
+    display: grid;
+    grid-template-areas: 
+    'figure intro'
+    'figure skills';
+    grid-template-columns:30% 70%;
+    grid-template-rows: repeat(2,auto);
+    margin: auto;
+}
+
+/* Main Content  - Figure*/
+#figure {
+    display: flex;
+    grid-area: figure;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#figure h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+}
+
+#figure h4 {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+}
+
+#figure figcaption {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Main Content - intro*/
+#intro {
+    position: relative;
+    display: flex;
+    grid-area: intro;
+    padding: 10px;
+    margin: auto;
+}
+
+#intro div {
+    display: block;
+}
+
+#intro h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#intro p {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Main Content - Skills */
+#skills {
+    position: relative;
+    display: BLOCK;
+    grid-area: skills;
+}
+
+#skills div {
+    padding: 10px;
+    display: block;
+}
+
+#skills h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#skills label, #skills li {
+    font-family: 'Outfit', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: auto;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'me'
+        'footer';
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto auto 5%;
+        background-color: papayawhip;
+    }
+    
+    /* Main Content */
+    #me {
+        display: flex;
+        grid-area: me;
+        border: 1px solid black;
+    }
+
+    #me img {
+        width: fit-content;
+        height: fit-content;
+        background-color: peachpuff;
+        border: 1px solid black;
+    }
+
+    /* Main Content Data */
+    div.container {
+        display: grid;
+        grid-template-areas: 
+        'figure'
+        'intro'
+        'skills';
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+
+    /* Main Content  - Figure*/
+    #figure {
+        display: flex;
+        grid-area: figure;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #figure h1 {
+        font-family: 'Syne', sans-serif;
+        font-size: 22px;
+    }
+
+    #figure h4 {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+    }
+
+    #figure figcaption {
+        font-family: 'Outfit', sans-serif;
+    }
+
+    /* Main Content - intro*/
+    #intro {
+        position: relative;
+        display: flex;
+        grid-area: intro;
+        padding: 10px;
+        margin: auto;
+    }
+
+    #intro div {
+        display: block;
+    }
+
+    #intro h1 {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    #intro p {
+        font-family: 'Outfit', sans-serif;
+    }
+
+    /* Main Content - Skills */
+    #skills {
+        position: relative;
+        display: flex;
+        grid-area: skills;
+    }
+
+    #skills div {
+        padding: 10px;
+        display: block;
+    }
+
+    #skills h1 {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    #skills label {
+        font-family: 'Outfit', sans-serif;
+    }
+}

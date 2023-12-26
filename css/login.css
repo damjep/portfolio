@@ -1,0 +1,82 @@
+body {
+    width: 100%;
+    height: auto;
+    min-height: 60.5em;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'login nav'
+    'footer footer';
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10% auto 5%;
+    background-color: papayawhip;
+}
+
+/* login */
+#login {
+    display: flex;
+    grid-area: login;
+}
+
+#login form {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+#login h1 {
+    font-family: 'Syne', sans-serif;
+}
+
+#login label {
+    font-family: 'Outfit', sans-serif;
+}
+
+#login button {
+    font-family: 'Outfit', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 100%;
+        height: auto;
+        min-height: 60.5em;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'login'
+        'footer';
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        background-color: papayawhip;
+    }
+    
+    /* login */
+    #login {
+        display: flex;
+        grid-area: login;
+    }
+    
+    #login form {
+        display: block;
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+    
+    #login h1 {
+        font-family: 'Syne', sans-serif;
+    }
+    
+    #login label {
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    #login button {
+        font-family: 'Outfit', sans-serif;
+    }
+}

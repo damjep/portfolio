@@ -1,0 +1,87 @@
+/* main.css */
+#header h1 {
+    position: relative;
+    animation-name: bottomTop;
+    animation-duration: 8s;
+}
+
+@keyframes bottomTop {
+    from { left: -1300px;}
+    to { left: 0px;}
+}
+
+/* index.html */
+/* Progress Bar */
+div#progress-1 {
+    width: 400px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: #5a6e54d3;
+    animation-name: progressBar100;
+    animation-duration: 6s;
+}
+
+div#progress-2 {
+    width: 280px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: #5a6e54d3;
+    animation-name: progressBar70;
+    animation-duration: 6s;
+}
+
+div#progress-3 {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: #5a6e54d3;
+    animation-name: progressBar50;
+    animation-duration: 6s;
+}
+
+@keyframes progressBar100 {
+    0% {
+        background-color: #b4e0a7d3;
+        width: 0;
+    }
+    100% {
+        background-color: #5a6e54d3;
+        width: 400px;
+    }
+}
+
+@keyframes progressBar70 {
+    0% {
+        background-color: #b4e0a7d3;
+        width: 0;
+    }
+    100% {
+        background-color: #5a6e54d3;
+        width: 280px;
+    }
+}
+
+@keyframes progressBar50 {
+    0% {
+        background-color: #b4e0a7d3;
+        width: 0;
+    }
+    100% {
+        background-color: #5a6e54d3;
+        width: 200px;
+    }
+}
+
+/* Figure */
+.figure {
+    animation-name: SlideRight;
+    animation-timing-function: ease-in;
+    animation-duration: 6s;
+    position: relative;
+}
+
+@keyframes SlideRight { 
+    from {left: -400px}
+    to {left: 8px}
+}
+

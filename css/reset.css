@@ -1,0 +1,9 @@
+html, header, hgroup, h1, h2, nav, ul, li, a,
+article, h3, p, figure, figcaption, i, section, 
+footer, img, span, div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+} 
